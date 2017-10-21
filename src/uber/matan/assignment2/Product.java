@@ -1,8 +1,11 @@
 package uber.matan.assignment2;
 
-public class Product {
-    String name;
-    int barcode;
-    double basePrice;
-    double baseTax;
+abstract class Product {
+    private String name;
+    private int barcode;
+    private double basePrice;
+    private double baseTax;
+    public double finalPrice() {
+        return baseTax * basePrice;
+    }
 }
